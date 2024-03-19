@@ -1,8 +1,8 @@
 Eu sei que para algumas pessoas esse foi basicamente seu primeiro código assembly certo.
 Quando você escreveu o código, você disse: você montou isso e abriu o depurador stella e viu
-tipo, todas as posições de memória diminuem de ff até 00 esvaziando os bancos.
+tipo, todas as posições de memória diminuem de ff até 00 esvaziando valores dos bancos.
 Mas e se eu lhe dissesse que você não apenas escreveu seu primeiro código assembly, mas também escreveu o primeiro bug em assembly
-bug, então eu sei que algumas pessoas provavelmente já sinalizaram isso.
+então eu sei que algumas pessoas provavelmente já sinalizaram isso.
 E antes que voce fique louco de raiva e me escreva um e-mail dizendo o quão ruim eu sou, eu sei, certo.
 Eu sei que temos um bug aqui.
 Então, para todos os outros que não perceberam isso, quero que reservemos um momento.
