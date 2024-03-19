@@ -19,3 +19,16 @@ o que está acontecendo em nosso código e por que ele pode estar com defeito.
 Apenas para ilustrar o que estávamos fazendo, quero dar um exemplo rápido aqui.
 Deixe-me vir aqui rapidamente e quero definir algumas posições de memória também, de forma aleatória.
 No stella na posição ff = aa, na posição fe = aa, eu coloquei em várias posições aqui. Estou apenas configurando alguns bits aleatórios.
+Então, se eu entrar aqui e forçar o program counter a começar nessa primeira linha do programa no stella debuger, então se iniciar o passo a passo
+então voce deveria ver tadas as posições desde ff virando zero, caindo para zero.
+Então, se eu subir, começo meu loop assim que repetir, alcance a linha do meu loop aqui, você verá que resetou para zero aqui no ff point
+e este tambem, provavelmente vai para zero, 0 tambem, baixando para 0... Então, todas as posições de memória dele estou baixando 
+e vazias com zero certo.
+Mas vamos ver rapidamente, Eu fui lá porque eles estão se tornando zero. Vou trapacear um pouco. Quero que você vá ver nosso registrador X lá em cima 
+que é aquele que faz contagem regressiva de FF até 0. Eu quero trapacear, quero fingir.
+Vamos fingir por um momento que nós percorremos todas as posições de memória até vamos dizer Register X = 08, vamos dizer que nos temos apenas de 8 até 0.
+Então vamos fingir que tudo foi escaneado já que estamos lá. E eu passo para o próximo passo e decrementa e vai para 7, então
+o programa verifica BNE (Branch not equal zero) e vou armazenar 0 na posição 7 e decrementa para 6 e o loop salva 0 na posição 6, salva 0 na posição 5 e assim
+por diante.
+Agora salva zero na posição 1 e decrementa o X, zero flag é setado e agora na proxima iteração saimos do loop.
+Veja que saimos do loop, sem limpar a posição 00 da memoria. Então, aqui está o nosso bug.
