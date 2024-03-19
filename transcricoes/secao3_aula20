@@ -9,11 +9,9 @@ Então, para todos os outros que não perceberam isso, quero que reservemos um m
 Quero que analisemos o que está acontecendo e por que nosso programa pode ter um bug.
 
 Lembre-se do objetivo do nosso programa.
-
-Queríamos sair da posição e queremos esvaziá-la do zero para afetar qual é o problema.
+Queríamos sair da posição de memŕia com FF e queremos esvaziá-la zero, mas qual é o problema?
 
 Você vê o próximo instantâneo e estávamos olhando.
-
 Esta não é uma visão completa de tráfego zero zero.
 
 Se você olhar atentamente para o canto superior esquerdo, verá que inicia a visualização que temos de 8 0 até
