@@ -32,3 +32,10 @@ o programa verifica BNE (Branch not equal zero) e vou armazenar 0 na posição 7
 por diante.
 Agora salva zero na posição 1 e decrementa o X, zero flag é setado e agora na proxima iteração saimos do loop.
 Veja que saimos do loop, sem limpar a posição 00 da memoria. Então, aqui está o nosso bug.
+Então nos acabamos de encontrar na linguagem assembly, o que os programadores chamam off by one error
+Nós executamos as vezes um loop ou um while loop e erramos quando deve ser a ultima execução do mesmo. Então, isto é o que exatamente aconteceu aqui
+Vejamos o código novamente, nós setamos o valor e depois decrementamos o valor do registrador x. Decrementamos 2,1,0 e em 0 nos saimos e não fazemos nada.
+Então como a gente corrigi isso? Existem duas maneiras:
+Do jeito muito preguiçoso também, eu poderia simplesmente vir aqui e dizer Uau, eu sei que cometi um erro. Então eu poderia simplesmente vir aqui e dizer bem, certifique-se de que depois que eu sair meu loop, e armazenar zero na posição 0 da memória. Isso seria a maneira mais preguiçosa de fazer.
+Eu poderia então mudar essas duas linhas, primeiro decrementar e depois armazenar o valor 0 na posição de memória onde está o X.
+A instrução de máquina sta não modifica flags, mas a instrução dex decrementa X e modifica as flags do processador e se tiver 0 flag, bne vai retornar true
